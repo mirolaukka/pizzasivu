@@ -1,0 +1,181 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Navigointi */
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dfe3e8;
+    border-radius: 0;
+}
+
+
+.nav-link img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    padding-left: 0;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.navbar .navbar-brand b {
+    font-weight: bold;
+    color: rgb(52, 235, 113);
+}
+
+.navbar .form-inline {
+    display: inline-block;
+}
+
+.navbar ul.nav li {
+    position: relative;
+}
+
+.navbar ul.nav li a {
+    color: #888;
+    font-size: 18px;
+}
+
+.navbar .navbar-right li:first-child a {
+    padding-right: 30px;
+}
+
+.gameArea {
+    margin: 0 auto;
+    display:inline-block
+}
+
+/* Alkusivun teksti */
+.sideText {
+    font-size: 18px;
+    color: black !important;
+    text-align: center;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.3);
+
+}
+/* Pelisivun teksti */
+.sideText2 {
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.aloitaButton {
+    border: 2px solid rgba(255,255,255,0.3);
+    background-color: rgb(52, 235, 113) !important;
+}
+
+
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vw;
+}
+
+.content {
+  position: fixed;
+}
+
+
+.table .thead-light th {
+
+  color: white;
+
+  background-color: rgb(52, 235, 113);
+
+  border-color: gray;
+
+}
+
+/* KIRJAUTUMIS SIVU */
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.leaderboard-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 5%
+}
+
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(52, 235, 113);
+}
+
+.login-form-1 .newUser{
+    color: rgb(52, 235, 113);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* 401 Page */
+
+.content-401 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+
+.pizzaRow {
+    border: 0.5px black solid;
+    border-radius: 30px;
+    background-color: rgba(107, 107, 107, 0.2);
+    margin:30px
+}
+
+
+/* Admin Panel*/
+
+.adminPanel {
+    display:none
+}
+
+.adminPanelPassword {
+    display:block
+}
