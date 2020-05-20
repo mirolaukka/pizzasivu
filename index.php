@@ -89,8 +89,8 @@
         </div>
         <div class="text-center mt-5">
             <?php if(isset($_SESSION['email'])) : ?>
-                <form action="tilaus.php">
-                    <button href="tilaus" type="submit" class="btn btn-primary btn-lg aloitaButton" style="border-radius:30px; font-size:30px;">Aloita pizzatilaus</button>
+                <form action="pizzat.php">
+                    <button href="pizzat" type="submit" class="btn btn-primary btn-lg aloitaButton" style="border-radius:30px; font-size:30px;">Aloita pizzatilaus</button>
                 </form>
             <?php else: ?>
                 <form action="register.php">

@@ -6,6 +6,7 @@ $username = "";
 $errors = array();
 
 // Yhdistetään tietokantaan
+$db = mysqli_connect('81.16.28.1', 'u178350957_miroatte', 'Keuda2020', 'u178350957_pizzasivu');
 
 // Rekisteröinti systeemi
 if (isset($_POST['reg_user'])) {
@@ -55,14 +56,12 @@ if (isset($_POST['reg_user'])) {
   	$query = "INSERT INTO users(userId, etunimi, sukunimi, lahiosoite, postinro, postitoimipaikka, puhelin, email, pasword)
     VALUES('0', '$etunimi', '$sukunimi', '$lahiosoite', '$postinro', '$postitoimipaikka', '$puhelin', '$email', '$password');";
   	mysqli_query($db, $query);
-    /*
     $_SESSION['etunimi'] = $etunimi;
     $_SESSION['sukunimi'] = $sukunimi;
     $_SESSION['lahiosoite'] = $lahiosoite;
     $_SESSION['postinro'] = $postinro;
     $_SESSION['postitoimipaikka'] = $postitoimipaikka;
     $_SESSION['puhelin'] = $puhelin;
-    */
   	$_SESSION['email'] = $email;
   	$_SESSION['success'] = "Kirjauduttu sisään!";
   	header('location: index.php');
