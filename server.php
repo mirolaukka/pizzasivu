@@ -85,18 +85,18 @@ if (isset($_POST['login_user'])) {
   	$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {
-        $set = mysqli_fetch_array($results);
-        $_SESSION['userinfo'] = $set;
-        $_SESSION['userid'] = $set['userId'];
-        $_SESSION['etunimi'] = $set['etunimi'];
-        $_SESSION['sukunimi'] = $set['sukunimi'];
-        $_SESSION['lahiosoite'] = $set['lahiosoite'];
-        $_SESSION['postinro'] = $set['postinro'];
-        $_SESSION['postitoimipaikka'] = $set['postitoimipaikka'];
-        $_SESSION['puhelin'] = $set['puhelin'];
-  	    $_SESSION['email'] = $email;
-  	    $_SESSION['success'] = "Kirjauduttu sisään!";
-  	  header('location: index.php');
+		$set = mysqli_fetch_array($results);
+		$_SESSION['userinfo'] = $set;
+		$_SESSION['userid'] = $set['userId'];
+		$_SESSION['etunimi'] = $set['etunimi'];
+		$_SESSION['sukunimi'] = $set['sukunimi'];
+		$_SESSION['lahiosoite'] = $set['lahiosoite'];
+		$_SESSION['postinro'] = $set['postinro'];
+		$_SESSION['postitoimipaikka'] = $set['postitoimipaikka'];
+		$_SESSION['puhelin'] = $set['puhelin'];
+  	    	$_SESSION['email'] = $email;
+  	    	$_SESSION['success'] = "Kirjauduttu sisään!";
+		header('location: index.php');
   	}else {
   		array_push($errors, "Käyttäjätunnus tai salasana on väärä!");
   	}
